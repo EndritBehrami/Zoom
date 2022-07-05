@@ -1,0 +1,281 @@
+body {
+    font-family: "Quicksand", sans-serif;
+}
+
+.nav-top {
+    display: flex;
+    align-items: centerm !important;
+    justify-content: space-around;
+    text-decoration: none;
+    color: white;
+}
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+    to{
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+.nav ul {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.nav li {
+    list-style-type: none;
+    margin: 0 8px;
+}
+
+.nav-top img {
+    width: 110px;
+    height: 50px;
+    margin: 10px 0;
+}
+
+.nav-top {
+    background: black;
+}
+
+.nav-top .nav ul li i {
+    color: white;
+    position: relative;
+    bottom: 2px;
+    margin-right: 3px;
+}
+
+.nav-top .nav ul li a {
+    font-family: fantasy;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.nav-top .nav ul a:hover {
+    color: burlywood;
+    transition-delay: 0.8;
+}
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99999;
+}
+/*navendPart*/
+/*hero3*/
+.hero-part3{
+    background-image: url(../images/pexels-burst-545061.jpg);
+    background-size: cover;
+}
+.hero-part3 .hero-part3-content{
+    font-family: fantasy;
+    color: white;
+    padding: 130px 0px 130px 700px;
+}
+.hero-part3 .hero-part3-content h2{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 19px;
+    padding-left: 55px;
+    color: burlywood;
+    animation: transitionIn 2s;
+}
+.hero-part3 .hero-part3-content h1{
+    padding-left: 40px;
+    animation: transitionIn 2s;
+}
+/*hero3end*/
+/*info*/
+.info{
+    display: flex;
+    margin-top: 40px;
+}
+.info .info-content2{
+    margin-bottom: 100px;
+    max-width: 500px;
+    padding: 70px 10px 30px 10px;
+    float: right;
+}
+.info .info-content2 h1{
+    font-family: fantasy;
+    font-size: 23px;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+.info .info-content2 h6 {
+    color: burlywood;
+    font-size: 16px;
+}
+.info .info-content2 a{
+    text-decoration: none;
+    color: burlywood;
+}
+.info .info-content2 .extra-info{
+    margin-bottom: 30px;
+}
+.info .info-content2 a:hover{
+    color: black;
+    transition-delay: 0.8;
+}
+
+.info img{
+    margin-bottom: 30px;
+    width: 450px;
+    float: left;
+}
+.info .aside  img{
+    max-width: 200px;
+}
+.info .aside #name{
+    padding-left:15px;
+    font-family: fantasy;
+    letter-spacing: 2px;
+    float: left;
+    margin-bottom: 15px;
+}
+.info .aside::before{
+    content: '';
+    position: absolute;
+    margin-top: 40px;
+    width: clamp(12%, 10%, 10%);
+    height: 3px;
+    background-color: #BABABA;
+    transform: translateY(-50%);
+}
+
+.types-coffe {
+    font-family: fantasy;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.types-coffe .top-part h3::before {
+    left: 0;
+    border-radius: 0 5px 5px 0px;
+}
+
+.types-coffe .top-part h3::after {
+    right: 0;
+    border-radius: 5px 0 0 5px;
+}
+
+.types-coffe .top-part h3::before,
+.types-coffe .top-part h3::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: clamp(20%, 30%, 40%);
+    height: 3px;
+    background-color: burlywood;
+    transform: translateY(-50%);
+}
+
+.types-coffe .top-part h3 {
+    margin: 0;
+    font-weight: 400;
+    color: white;
+    background-color: black;
+    padding: 30px 0;
+    text-align: center;
+}
+/*footer*/
+.end {
+    background-image: url(../images/bottt.jpg);
+    color: white;
+    padding-bottom: 10px;
+    opacity: 1;
+}
+
+.end .contact-us {
+    margin-top: 30px;
+}
+
+.end .contact-us h3 {
+    font-size: 25px;
+    font-family: 'Anton', sans-serif;
+}
+
+.end .contact-us p {
+    margin-bottom: 1px;
+    font-weight: 100;
+}
+
+.end .contact-us img {
+    width: 200px;
+    height: 100px;
+    margin-top: 10px;
+}
+
+.end .time-end {
+    font-size: 12px;
+    margin-top: 30px;
+}
+
+.end .time-end h3 {
+    font-size: 25px;
+    margin-left: 30px;
+    font-family: 'Anton', sans-serif;
+}
+
+.end .time-end ul {
+    font-weight: 200;
+    list-style-type: none;
+}
+
+.end .time-end ul li {
+    margin-top: 15px;
+}
+
+.side-links ul {
+    list-style-type: none;
+    float: right;
+}
+
+.social-contact {
+    margin-left: 5px;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.social-contact h3 {
+    font-size: 25px;
+    margin-left: 30px;
+    font-family: 'Anton', sans-serif;
+}
+
+.social-contact ul {
+    margin-top: 10px;
+    list-style-type: none;
+}
+
+.social-contact ul li {
+    margin-top: 20px;
+    display: flex;
+    display: inline-block;
+}
+
+.social-contact ul li a {
+    color: white;
+    text-decoration: none;
+    background-color: burlywood;
+    border-radius: 100%;
+    padding:12px;
+    margin-right: 10xp;
+}
+.social-contact ul li a  i{
+
+
+}
+
+.social-contact ul li a:hover {
+    opacity: 0.8;
+}
+
+
+
+
+/*info*/
